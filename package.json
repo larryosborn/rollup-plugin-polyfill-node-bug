@@ -1,0 +1,34 @@
+{
+  "name": "rollup-plugin-polyfill-node-bug",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "scripts": {
+    "test:src": "node -r esm index.js",
+    "test:cjs": "node dist/index.js",
+    "test:mjs": "node -r esm dist/index.mjs",
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larryosborn/rollup-plugin-polyfill-node-bug.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/larryosborn/rollup-plugin-polyfill-node-bug/issues"
+  },
+  "homepage": "https://github.com/larryosborn/rollup-plugin-polyfill-node-bug#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.3",
+    "@rollup/plugin-node-resolve": "^13.2.0",
+    "esm": "^3.2.25",
+    "rollup": "^2.70.1",
+    "rollup-plugin-polyfill-node": "^0.9.0"
+  },
+  "dependencies": {
+    "qs": "^6.10.3"
+  }
+}
